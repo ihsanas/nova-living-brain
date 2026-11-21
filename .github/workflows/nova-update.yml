@@ -1,0 +1,36 @@
+name: NOVA update
+on:
+  repository_dispatch:
+    types: [nova-update]
+  workflow_dispatch:
+    inputs:
+      event_json:
+        description: 'Public-safe NOVA event JSON'
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: nova-data-writer
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate and apply event
+        run: node scripts/apply-event.mjs
+      - name: Save event
+        shell: bash
+        run: |
+          if git diff --quiet -- data/progress.json; then exit 0; fi
+          git config user.name "NOVA Update"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/progress.json
+          git commit -m "Update NOVA development evidence"
+          git push origin HEAD:main
