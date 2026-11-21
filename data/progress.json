@@ -1,6 +1,6 @@
 {
   "archive_version": 20,
-  "updated": "2026-11-21T13:18:58.199Z",
+  "updated": "2026-11-21T13:23:34.953Z",
   "evidence_status": "G1 Candidate / benchmark belum tervalidasi",
   "score_note": "Skor hanya ilustrasi kesiapan rancangan, bukan IQ atau benchmark tervalidasi",
   "modules": [
@@ -29,8 +29,8 @@
       "id": "iteration",
       "name": "Iterasi terkelola",
       "illustrative_score": 50,
-      "current": "Penghubung pembaruan NOVA telah dipasang di GitHub.",
-      "next": "Menghubungkan sumber catatan perkembangan NOVA."
+      "current": "Iterasi I-001: disusun aturan pelaporan perubahan, bukti, hasil uji, batas, dan langkah berikutnya; diperiksa melalui enam kasus meja. Belum diuji independen dan belum digabung ke arsip utama V20.",
+      "next": "Uji aturan pada lima hasil kerja NOVA nyata; audit dukungan bukti untuk setiap klaim. Skor kemampuan tetap."
     },
     {
       "id": "literary",
@@ -48,6 +48,14 @@
     }
   ],
   "history": [
+    {
+      "event_id": "nova-i001-evidence-reporting",
+      "date": "2026-11-21T13:23:34.953Z",
+      "status": "Catatan baru / belum tervalidasi",
+      "note": "Iterasi I-001: disusun aturan pelaporan perubahan, bukti, hasil uji, batas, dan langkah berikutnya; diperiksa melalui enam kasus meja. Belum diuji independen dan belum digabung ke arsip utama V20.",
+      "source": "https://github.com/ihsanas/nova-living-brain/blob/main/data/progress.json",
+      "module": "iteration"
+    },
     {
       "event_id": "nova-sync-install-001",
       "date": "2026-11-21T13:18:58.199Z",
