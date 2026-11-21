@@ -1,0 +1,8 @@
+{
+  "id": "replace-with-unique-event-id",
+  "module": "language",
+  "summary": "CONTOH — ganti dengan hasil audit yang benar-benar dilakukan.",
+  "next": "Ganti dengan pengujian berikutnya.",
+  "source": "https://github.com/ihsanas/nova-living-brain",
+  "public_safe": false
+}

@@ -1,0 +1,28 @@
+STATUS: Paket siap dipasang, belum aktif di GitHub.
+Akses integrasi saat pembuatan masih 403. Tidak ada koneksi otomatis ke pesan ChatGPT.
+
+PASANG
+1. Ekstrak paket ini.
+2. Ganti index.html di root repo.
+3. Unggah scripts/apply-event.mjs dan scripts/send-event.mjs.
+4. Buat .github/workflows/nova-update.yml dengan isi file yang disertakan. Pastikan folder tersembunyi .github ikut terunggah.
+5. Setelah perubahan index.html terpasang melalui Pages, dashboard mengambil data langsung dari main setiap 15 detik.
+Jangan menimpa data/progress.json saat instalasi: gunakan data terbaru yang sudah ada di repo.
+
+UJI TANPA TOKEN
+GitHub Actions > NOVA update > Run workflow.
+Masukkan JSON sesuai event.example.json, isi hasil nyata, ID unik, tautan bukti publik, dan public_safe:true.
+Catatan otomatis disimpan di data/progress.json. Skor dan tingkat bukti tidak dinaikkan otomatis.
+Workflow menolak modul tidak dikenal, payload tidak valid, dan duplikasi ID yang sudah tersimpan.
+
+PENGIRIM OTOMATIS
+Aplikasi sumber harus menjalankan node scripts/send-event.mjs <path-event.json> saat menghasilkan catatan NOVA.
+GH_TOKEN disediakan hanya di lingkungan pengirim tepercaya dan harus memiliki akses Contents: write ke repo ini.
+Jangan kirim token lewat chat atau simpan token dalam HTML/repo.
+Paket tidak membuat token, tidak memasang server, dan tidak menangkap percakapan ChatGPT secara otomatis.
+Tanpa pemicu di aplikasi sumber, catatan dari ChatGPT harus diekspor/dikirim secara eksplisit.
+GitHub Actions diproses dalam antrean; ini pembaruan mendekati real-time, bukan jaminan waktu nyata instan.
+
+CATATAN
+Repositori ini publik. Kirim ringkasan yang memang boleh dipublikasikan saja.
+Data diambil dari raw GitHub sehingga pembaruan JSON tidak perlu menunggu build Pages yang baru.
