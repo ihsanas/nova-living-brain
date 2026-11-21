@@ -1,17 +1,65 @@
 {
   "archive_version": 20,
-  "updated": "2026-11-21",
+  "updated": "2026-11-21T13:18:58.199Z",
   "evidence_status": "G1 Candidate / benchmark belum tervalidasi",
   "score_note": "Skor hanya ilustrasi kesiapan rancangan, bukan IQ atau benchmark tervalidasi",
   "modules": [
-    {"id":"music","name":"Kreativitas musik","illustrative_score":70,"current":"Rancangan komposisi, emosi, dan aransemen","next":"Uji A/B kualitas hook, dinamika, dan audio"},
-    {"id":"identity","name":"Identitas personel","illustrative_score":75,"current":"Lima karakter dan referensi artistik telah ditetapkan","next":"Uji konsistensi suara lintas lagu"},
-    {"id":"research","name":"Riset dan bukti","illustrative_score":60,"current":"Register riset dan tata kelola bukti","next":"Validasi sumber dan replikasi eksperimen"},
-    {"id":"iteration","name":"Iterasi terkelola","illustrative_score":50,"current":"Protokol iterasi dan pencatatan Candidate","next":"Benchmark dan uji pendengar buta"},
-    {"id":"literary","name":"Kecerdasan sastra","illustrative_score":45,"current":"Kerangka narasi, konflik, dan metafora","next":"Uji koherensi dan interpretasi pendengar"},
-    {"id":"language","name":"Bahasa dan budaya","illustrative_score":35,"current":"Audit semantik, tata bahasa, dialek, dan prosodi","next":"Audit pengucapan nama tempat dengan bukti audio"}
+    {
+      "id": "music",
+      "name": "Kreativitas musik",
+      "illustrative_score": 70,
+      "current": "Rancangan komposisi, emosi, dan aransemen",
+      "next": "Uji A/B kualitas hook, dinamika, dan audio"
+    },
+    {
+      "id": "identity",
+      "name": "Identitas personel",
+      "illustrative_score": 75,
+      "current": "Lima karakter dan referensi artistik telah ditetapkan",
+      "next": "Uji konsistensi suara lintas lagu"
+    },
+    {
+      "id": "research",
+      "name": "Riset dan bukti",
+      "illustrative_score": 60,
+      "current": "Register riset dan tata kelola bukti",
+      "next": "Validasi sumber dan replikasi eksperimen"
+    },
+    {
+      "id": "iteration",
+      "name": "Iterasi terkelola",
+      "illustrative_score": 50,
+      "current": "Penghubung pembaruan NOVA telah dipasang di GitHub.",
+      "next": "Menghubungkan sumber catatan perkembangan NOVA."
+    },
+    {
+      "id": "literary",
+      "name": "Kecerdasan sastra",
+      "illustrative_score": 45,
+      "current": "Kerangka narasi, konflik, dan metafora",
+      "next": "Uji koherensi dan interpretasi pendengar"
+    },
+    {
+      "id": "language",
+      "name": "Bahasa dan budaya",
+      "illustrative_score": 35,
+      "current": "Audit semantik, tata bahasa, dialek, dan prosodi",
+      "next": "Audit pengucapan nama tempat dengan bukti audio"
+    }
   ],
   "history": [
-    {"date":"2026-11-21","status":"G1 Candidate","note":"Dashboard publik disiapkan; tidak ada klaim kenaikan kemampuan tervalidasi"}
+    {
+      "event_id": "nova-sync-install-001",
+      "date": "2026-11-21T13:18:58.199Z",
+      "status": "Catatan baru / belum tervalidasi",
+      "note": "Penghubung pembaruan NOVA telah dipasang di GitHub.",
+      "source": "https://github.com/ihsanas/nova-living-brain",
+      "module": "iteration"
+    },
+    {
+      "date": "2026-11-21",
+      "status": "G1 Candidate",
+      "note": "Dashboard publik disiapkan; tidak ada klaim kenaikan kemampuan tervalidasi"
+    }
   ]
 }
